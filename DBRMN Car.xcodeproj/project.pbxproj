@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036F4EF91CBF80400052C15D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F4EF81CBF80400052C15D /* AppDelegate.swift */; };
+		036F4F001CBF80400052C15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036F4EFF1CBF80400052C15D /* Assets.xcassets */; };
+		036F4F031CBF80400052C15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036F4F011CBF80400052C15D /* LaunchScreen.storyboard */; };
+		036F4F0C1CBF81570052C15D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F4F0A1CBF81570052C15D /* StartViewController.swift */; };
+		036F4F0D1CBF81570052C15D /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036F4F0B1CBF81570052C15D /* StartViewController.xib */; };
+		03A3F1B71CBF9EE500AF34DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3F1B61CBF9EE500AF34DB /* Constants.swift */; };
+		03A3F1C21CBFD95300AF34DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A3F1C11CBFD95300AF34DB /* AVFoundation.framework */; };
+		1642F2A21CBF882B000638D0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1642F2A01CBF882B000638D0 /* Interface.storyboard */; };
+		1642F2A41CBF882B000638D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1642F2A31CBF882B000638D0 /* Assets.xcassets */; };
+		1642F2AB1CBF882B000638D0 /* DBRMN Car Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1642F2AA1CBF882B000638D0 /* DBRMN Car Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1642F2B21CBF882B000638D0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F2B11CBF882B000638D0 /* InterfaceController.swift */; };
+		1642F2B41CBF882B000638D0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F2B31CBF882B000638D0 /* ExtensionDelegate.swift */; };
+		1642F2B61CBF882B000638D0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F2B51CBF882B000638D0 /* NotificationController.swift */; };
+		1642F2B81CBF882B000638D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1642F2B71CBF882B000638D0 /* Assets.xcassets */; };
+		1642F2BC1CBF882B000638D0 /* DBRMN Car Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1642F29E1CBF882B000638D0 /* DBRMN Car Watch.app */; };
+		1642F2C81CBF94D6000638D0 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642F2C71CBF94D6000638D0 /* WatchSessionManager.swift */; };
+		16CF36B71CBFDC320091104E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF36B61CBFDC320091104E /* ComplicationController.swift */; };
+		4603E3231D898902001EF0E9 /* OBD2 in Resources */ = {isa = PBXBuildFile; fileRef = 4603E3221D898902001EF0E9 /* OBD2 */; };
+		66F86269290E04B09D9FDEA0 /* Pods_DBRMN_Car.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E98B7A11BEF2E9837417CC9 /* Pods_DBRMN_Car.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1642F2AC1CBF882B000638D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 036F4EED1CBF80400052C15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1642F2A91CBF882B000638D0;
+			remoteInfo = "DBRMN Car Watch Extension";
+		};
+		1642F2BA1CBF882B000638D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 036F4EED1CBF80400052C15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1642F29D1CBF882B000638D0;
+			remoteInfo = "DBRMN Car Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1642F2C21CBF882B000638D0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1642F2AB1CBF882B000638D0 /* DBRMN Car Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1642F2C41CBF882B000638D0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1642F2BC1CBF882B000638D0 /* DBRMN Car Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		036F4EF51CBF80400052C15D /* DBRMN Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBRMN Car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		036F4EF81CBF80400052C15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		036F4EFF1CBF80400052C15D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		036F4F021CBF80400052C15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		036F4F041CBF80400052C15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		036F4F0A1CBF81570052C15D /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		036F4F0B1CBF81570052C15D /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		03A3F1B61CBF9EE500AF34DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		03A3F1C11CBFD95300AF34DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1642F29E1CBF882B000638D0 /* DBRMN Car Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBRMN Car Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1642F2A11CBF882B000638D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1642F2A31CBF882B000638D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1642F2A51CBF882B000638D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1642F2AA1CBF882B000638D0 /* DBRMN Car Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DBRMN Car Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1642F2B01CBF882B000638D0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1642F2B11CBF882B000638D0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1642F2B31CBF882B000638D0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1642F2B51CBF882B000638D0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1642F2B71CBF882B000638D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1642F2B91CBF882B000638D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1642F2C71CBF94D6000638D0 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		16CF36B61CBFDC320091104E /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3E98B7A11BEF2E9837417CC9 /* Pods_DBRMN_Car.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBRMN_Car.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4603E3221D898902001EF0E9 /* OBD2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OBD2; sourceTree = "<group>"; };
+		B9682A1B26D2482623BD169E /* Pods-DBRMN Car.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBRMN Car.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBRMN Car/Pods-DBRMN Car.debug.xcconfig"; sourceTree = "<group>"; };
+		C3B77FCDE23B6B589CC76C41 /* Pods-DBRMN Car.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBRMN Car.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBRMN Car/Pods-DBRMN Car.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		036F4EF21CBF80400052C15D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A3F1C21CBFD95300AF34DB /* AVFoundation.framework in Frameworks */,
+				66F86269290E04B09D9FDEA0 /* Pods_DBRMN_Car.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1642F2A71CBF882B000638D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		036F4EEC1CBF80400052C15D = {
+			isa = PBXGroup;
+			children = (
+				036F4EF71CBF80400052C15D /* DBRMN Car */,
+				1642F29F1CBF882B000638D0 /* DBRMN Car Watch */,
+				1642F2AE1CBF882B000638D0 /* DBRMN Car Watch Extension */,
+				036F4EF61CBF80400052C15D /* Products */,
+				2D4C71EA32CA9281ECAA0F23 /* Pods */,
+				81AF6E9D0ADE90BD29E7B896 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		036F4EF61CBF80400052C15D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				036F4EF51CBF80400052C15D /* DBRMN Car.app */,
+				1642F29E1CBF882B000638D0 /* DBRMN Car Watch.app */,
+				1642F2AA1CBF882B000638D0 /* DBRMN Car Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		036F4EF71CBF80400052C15D /* DBRMN Car */ = {
+			isa = PBXGroup;
+			children = (
+				4603E3221D898902001EF0E9 /* OBD2 */,
+				036F4EF81CBF80400052C15D /* AppDelegate.swift */,
+				036F4EFF1CBF80400052C15D /* Assets.xcassets */,
+				036F4F041CBF80400052C15D /* Info.plist */,
+				036F4F0A1CBF81570052C15D /* StartViewController.swift */,
+				1642F2C71CBF94D6000638D0 /* WatchSessionManager.swift */,
+				036F4F0B1CBF81570052C15D /* StartViewController.xib */,
+				036F4F011CBF80400052C15D /* LaunchScreen.storyboard */,
+				03A3F1B61CBF9EE500AF34DB /* Constants.swift */,
+			);
+			path = "DBRMN Car";
+			sourceTree = "<group>";
+		};
+		1642F29F1CBF882B000638D0 /* DBRMN Car Watch */ = {
+			isa = PBXGroup;
+			children = (
+				1642F2A01CBF882B000638D0 /* Interface.storyboard */,
+				1642F2A31CBF882B000638D0 /* Assets.xcassets */,
+				1642F2A51CBF882B000638D0 /* Info.plist */,
+			);
+			path = "DBRMN Car Watch";
+			sourceTree = "<group>";
+		};
+		1642F2AE1CBF882B000638D0 /* DBRMN Car Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1642F2B11CBF882B000638D0 /* InterfaceController.swift */,
+				1642F2B31CBF882B000638D0 /* ExtensionDelegate.swift */,
+				1642F2B51CBF882B000638D0 /* NotificationController.swift */,
+				16CF36B61CBFDC320091104E /* ComplicationController.swift */,
+				1642F2B71CBF882B000638D0 /* Assets.xcassets */,
+				1642F2B91CBF882B000638D0 /* Info.plist */,
+				1642F2AF1CBF882B000638D0 /* Supporting Files */,
+			);
+			path = "DBRMN Car Watch Extension";
+			sourceTree = "<group>";
+		};
+		1642F2AF1CBF882B000638D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1642F2B01CBF882B000638D0 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D4C71EA32CA9281ECAA0F23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9682A1B26D2482623BD169E /* Pods-DBRMN Car.debug.xcconfig */,
+				C3B77FCDE23B6B589CC76C41 /* Pods-DBRMN Car.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81AF6E9D0ADE90BD29E7B896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A3F1C11CBFD95300AF34DB /* AVFoundation.framework */,
+				3E98B7A11BEF2E9837417CC9 /* Pods_DBRMN_Car.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		036F4EF41CBF80400052C15D /* DBRMN Car */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036F4F071CBF80400052C15D /* Build configuration list for PBXNativeTarget "DBRMN Car" */;
+			buildPhases = (
+				E2B14FEABBB51A05AE8CDFFA /* Check Pods Manifest.lock */,
+				036F4EF11CBF80400052C15D /* Sources */,
+				036F4EF21CBF80400052C15D /* Frameworks */,
+				036F4EF31CBF80400052C15D /* Resources */,
+				BF132E9F607D64193163FE29 /* Embed Pods Frameworks */,
+				48C37A26CD59A03C4A3C26BD /* Copy Pods Resources */,
+				1642F2C41CBF882B000638D0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1642F2BB1CBF882B000638D0 /* PBXTargetDependency */,
+			);
+			name = "DBRMN Car";
+			productName = "DBRMN Car";
+			productReference = 036F4EF51CBF80400052C15D /* DBRMN Car.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1642F29D1CBF882B000638D0 /* DBRMN Car Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1642F2C31CBF882B000638D0 /* Build configuration list for PBXNativeTarget "DBRMN Car Watch" */;
+			buildPhases = (
+				1642F29C1CBF882B000638D0 /* Resources */,
+				1642F2C21CBF882B000638D0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1642F2AD1CBF882B000638D0 /* PBXTargetDependency */,
+			);
+			name = "DBRMN Car Watch";
+			productName = "DBRMN Car Watch";
+			productReference = 1642F29E1CBF882B000638D0 /* DBRMN Car Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1642F2A91CBF882B000638D0 /* DBRMN Car Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1642F2C11CBF882B000638D0 /* Build configuration list for PBXNativeTarget "DBRMN Car Watch Extension" */;
+			buildPhases = (
+				1642F2A61CBF882B000638D0 /* Sources */,
+				1642F2A71CBF882B000638D0 /* Frameworks */,
+				1642F2A81CBF882B000638D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DBRMN Car Watch Extension";
+			productName = "DBRMN Car Watch Extension";
+			productReference = 1642F2AA1CBF882B000638D0 /* DBRMN Car Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		036F4EED1CBF80400052C15D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Doberman AB";
+				TargetAttributes = {
+					036F4EF41CBF80400052C15D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					1642F29D1CBF882B000638D0 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQLCGPWNG6;
+					};
+					1642F2A91CBF882B000638D0 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQLCGPWNG6;
+					};
+				};
+			};
+			buildConfigurationList = 036F4EF01CBF80400052C15D /* Build configuration list for PBXProject "DBRMN Car" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 036F4EEC1CBF80400052C15D;
+			productRefGroup = 036F4EF61CBF80400052C15D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				036F4EF41CBF80400052C15D /* DBRMN Car */,
+				1642F29D1CBF882B000638D0 /* DBRMN Car Watch */,
+				1642F2A91CBF882B000638D0 /* DBRMN Car Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		036F4EF31CBF80400052C15D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036F4F031CBF80400052C15D /* LaunchScreen.storyboard in Resources */,
+				036F4F001CBF80400052C15D /* Assets.xcassets in Resources */,
+				036F4F0D1CBF81570052C15D /* StartViewController.xib in Resources */,
+				4603E3231D898902001EF0E9 /* OBD2 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1642F29C1CBF882B000638D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1642F2A41CBF882B000638D0 /* Assets.xcassets in Resources */,
+				1642F2A21CBF882B000638D0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1642F2A81CBF882B000638D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1642F2B81CBF882B000638D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48C37A26CD59A03C4A3C26BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBRMN Car/Pods-DBRMN Car-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF132E9F607D64193163FE29 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBRMN Car/Pods-DBRMN Car-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B14FEABBB51A05AE8CDFFA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		036F4EF11CBF80400052C15D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036F4EF91CBF80400052C15D /* AppDelegate.swift in Sources */,
+				036F4F0C1CBF81570052C15D /* StartViewController.swift in Sources */,
+				1642F2C81CBF94D6000638D0 /* WatchSessionManager.swift in Sources */,
+				03A3F1B71CBF9EE500AF34DB /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1642F2A61CBF882B000638D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1642F2B61CBF882B000638D0 /* NotificationController.swift in Sources */,
+				16CF36B71CBFDC320091104E /* ComplicationController.swift in Sources */,
+				1642F2B41CBF882B000638D0 /* ExtensionDelegate.swift in Sources */,
+				1642F2B21CBF882B000638D0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1642F2AD1CBF882B000638D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1642F2A91CBF882B000638D0 /* DBRMN Car Watch Extension */;
+			targetProxy = 1642F2AC1CBF882B000638D0 /* PBXContainerItemProxy */;
+		};
+		1642F2BB1CBF882B000638D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1642F29D1CBF882B000638D0 /* DBRMN Car Watch */;
+			targetProxy = 1642F2BA1CBF882B000638D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		036F4F011CBF80400052C15D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036F4F021CBF80400052C15D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1642F2A01CBF882B000638D0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1642F2A11CBF882B000638D0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		036F4F051CBF80400052C15D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		036F4F061CBF80400052C15D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		036F4F081CBF80400052C15D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9682A1B26D2482623BD169E /* Pods-DBRMN Car.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "DBRMN Car/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.doberman.DBRMN-Car";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		036F4F091CBF80400052C15D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B77FCDE23B6B589CC76C41 /* Pods-DBRMN Car.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "DBRMN Car/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.doberman.DBRMN-Car";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1642F2BD1CBF882B000638D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DBRMN_Car_Watch_Extension;
+				INFOPLIST_FILE = "DBRMN Car Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.doberman.DBRMN-Car.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		1642F2BE1CBF882B000638D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DBRMN_Car_Watch_Extension;
+				INFOPLIST_FILE = "DBRMN Car Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.doberman.DBRMN-Car.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		1642F2BF1CBF882B000638D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "DBRMN Car Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.doberman.DBRMN-Car.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		1642F2C01CBF882B000638D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "DBRMN Car Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.doberman.DBRMN-Car.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		036F4EF01CBF80400052C15D /* Build configuration list for PBXProject "DBRMN Car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036F4F051CBF80400052C15D /* Debug */,
+				036F4F061CBF80400052C15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		036F4F071CBF80400052C15D /* Build configuration list for PBXNativeTarget "DBRMN Car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036F4F081CBF80400052C15D /* Debug */,
+				036F4F091CBF80400052C15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1642F2C11CBF882B000638D0 /* Build configuration list for PBXNativeTarget "DBRMN Car Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1642F2BF1CBF882B000638D0 /* Debug */,
+				1642F2C01CBF882B000638D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1642F2C31CBF882B000638D0 /* Build configuration list for PBXNativeTarget "DBRMN Car Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1642F2BD1CBF882B000638D0 /* Debug */,
+				1642F2BE1CBF882B000638D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 036F4EED1CBF80400052C15D /* Project object */;
+}

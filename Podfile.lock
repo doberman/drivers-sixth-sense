@@ -1,0 +1,16 @@
+PODS:
+  - Socket.IO-Client-Swift (6.1.0)
+  - SpeechKit (2.1.5)
+  - SwiftyTimer (1.4.0)
+
+DEPENDENCIES:
+  - Socket.IO-Client-Swift (~> 6.1)
+  - SpeechKit (~> 2.1)
+  - SwiftyTimer (~> 1.4)
+
+SPEC CHECKSUMS:
+  Socket.IO-Client-Swift: b0ebbd80f039992bad6d0f74730b5a540d979520
+  SpeechKit: 0ad957204f9ad123349844338856e89bcea723bd
+  SwiftyTimer: db4458cfaf67fc71e16ad6e4637c60b86f76a649
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,13 @@
+//
+//  Constants.swift
+//  DBRMN Car
+//
+//  Copyright © 2016 Doberman AB. All rights reserved.
+//
+
+import Foundation
+
+let kSpeechKitAppID = ""
+let kSpeechKitAppToken = ""
+let kSpeechKitServerHostname = ""
+let kSpeechKitServerPort = -1
